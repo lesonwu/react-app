@@ -28,8 +28,8 @@ const store = createStore(reducers, compose(
     window.devToolsExtension?window.devToolsExtension():f=>f
 ))
 
-function Erying(){
-    return <h2>二营</h2>
+function Dashboard(){
+    return <h2>Dashboard</h2>
 }
 // function Qibinglian(){
 //     return <h2>骑兵连</h2>
@@ -65,6 +65,7 @@ ReactDOM.render(
                     <Route path="/geniusinfo" component={GeniusInfo}></Route>
                     <Route path="/login" component={Login}></Route>
                     <Route path="/register" component={Register}></Route>
+                    <Route component={Dashboard}></Route>
                 </Switch>
             </div>
         </BrowserRouter>
