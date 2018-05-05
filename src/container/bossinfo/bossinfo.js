@@ -18,7 +18,7 @@ class BossInfo extends React.Component{
             title:'',
             company:'',
             money:'',
-            decription:''
+            desc:''
         }
         this.selectAvatar = this.selectAvatar.bind(this)
     }
@@ -34,6 +34,7 @@ class BossInfo extends React.Component{
         })
     }
     render(){
+        console.log(this.state)
         const path = this.props.location.pathname
         const redirect = this.props.redirectTo
         return (
@@ -58,7 +59,7 @@ class BossInfo extends React.Component{
                     onChange={v=>this.handleChange('money',v)}
                 >职位薪酬</InputItem>
                 <TextareaItem
-                    onChange={v=>this.handleChange('decription',v)}
+                    onChange={v=>this.handleChange('desc',v)}
                     rows={3}
                     autoHeight
                     title="职位要求"

@@ -13,3 +13,11 @@ body {
     line-height:40px;
     margin-left:12px;
 }
+.fixd-header .am-navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+.am-card img{
+    width:80px;
+}

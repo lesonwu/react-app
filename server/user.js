@@ -9,9 +9,16 @@ const _filter = {'pwd':0,'__v':0}
 Router.get('/list',function(req,res){
     //移除清空所有数据
     // User.remove({},function(err,doc){})
+    //第一种获取get请求参数的方式
+    // const type = req.query.type
+    //另一种写法，post的参数用req.body方式获取，get用req.query获取
+    const {type} = req.query
     //查找所有数据
-    User.find({},function(err,doc){
-        return res.json(doc)
+    // User.find({},function(err,doc){
+    //     return res.json(doc)
+    //查找type=genius的列表
+    User.find({type},function(err,doc){
+        return res.json({code:0,data:doc})
     })
 })
 Router.post('/update', function(req,res){

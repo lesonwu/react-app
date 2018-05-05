@@ -14,6 +14,7 @@ import Register from './container/register/register'
 import AuthRoute from './component/authroute/authroute'
 import BossInfo from './container/bossinfo/bossinfo'
 import GeniusInfo from './container/geniusinfo/geniusinfo'
+import Dashboard from './component/dashboard/dashboard'
 
 import reducers from './reducer'
 import './config'
@@ -28,9 +29,6 @@ const store = createStore(reducers, compose(
     window.devToolsExtension?window.devToolsExtension():f=>f
 ))
 
-function Dashboard(){
-    return <h2>Dashboard</h2>
-}
 // function Qibinglian(){
 //     return <h2>骑兵连</h2>
 // }

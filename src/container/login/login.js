@@ -29,6 +29,7 @@ class Login extends React.Component{
         this.props.login(this.state)
     }
     render(){
+        console.log(this.props);
         return (
             <div>
                 {this.props.redirectTo?<Redirect to={this.props.redirectTo} />:null}

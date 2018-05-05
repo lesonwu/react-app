@@ -18,7 +18,7 @@ class GeniusInfo extends React.Component{
             title:'',
             company:'',
             money:'',
-            decription:''
+            desc:''
         }
         this.selectAvatar = this.selectAvatar.bind(this)
     }
@@ -52,7 +52,7 @@ class GeniusInfo extends React.Component{
                     onChange={v=>this.handleChange('title',v)}
                 >求职信息</InputItem>
                 <TextareaItem
-                    onChange={v=>this.handleChange('decription',v)}
+                    onChange={v=>this.handleChange('desc',v)}
                     rows={3}
                     autoHeight
                     title="职位要求"
